@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { StyleSheet, View, Image, Dimensions, TouchableOpacity, Text } from 'react-native';
 import { GestureHandlerRootView, PinchGestureHandler, PanGestureHandler, State } from 'react-native-gesture-handler';
 import Animated, { useSharedValue, useAnimatedStyle, withSpring } from 'react-native-reanimated';
-import { LinearGradient } from 'expo-linear-gradient';
 import { useGlobalState } from './GlobalStateProvider'; // Import global state hook
 
 const { width, height } = Dimensions.get('window');
@@ -152,7 +151,6 @@ const GameScreen = () => {
               {images.map((img) => (
                 <TouchableOpacity
                   key={img.id}
-                  testID={`image-${img.id}`} 
                   style={[
                     styles.overlayImage,
                     { top: img.y, left: img.x },
@@ -180,7 +178,7 @@ const GameScreen = () => {
                 <Text style={styles.taskText}>
                   {task.name}: {`In Progress (${task.found}/${task.answers.length})`}
                 </Text>
-                <TouchableOpacity style={styles.hintButton} onPress={() => handleHintClick(task.id)} testID={`hint-button-${task.id}`}>
+                <TouchableOpacity style={styles.hintButton} onPress={() => handleHintClick(task.id)}>
                   <Text style={styles.hintText}>Hint</Text>
                 </TouchableOpacity>
                 </>
@@ -202,6 +200,7 @@ const GameScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+
   },
   sceneImage: {
     width: width * 1,
