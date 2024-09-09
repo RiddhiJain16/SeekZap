@@ -1,15 +1,19 @@
-// App.js
+// References : 
+// icons : https://fonts.google.com/icons
+// Images for board : https://www.freepik.com/
+// Image editing : https://www.adobe.com/products/photoshop/landpa.html?sdid=FR7NYZM2&mv=search&mv2=paidsearch&ef_id=cfceb887530014eb6171de59f0114103:G:s&s_kwcid=AL!3085!10!79165043299287!79165251442725&msclkid=cfceb887530014eb6171de59f0114103
+
 import React from 'react';
 import { SafeAreaView, StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { GlobalStateProvider } from './screens/GlobalStateProvider'; // Import global state provider
+import { GlobalStateProvider } from './screens/GlobalFile'; 
 import HomePage from './screens/HomePage';
 import GameScreen from './screens/GameScreen';
 import SettingPopUp from './screens/SettingPopUp';
 import BoardLevel from './screens/BoardLevel';
 import SplashLoad from './screens/SplashLoad';
-// Import other screens here
+
 
 const Stack = createStackNavigator();
 
@@ -36,7 +40,7 @@ const App = () => {
           component={BoardLevel}
           options={{ title: 'Select Board' }} 
         />
-            {/* Add other screens here */}
+            
           </Stack.Navigator>
         </NavigationContainer>
       </SafeAreaView>

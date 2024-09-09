@@ -1,4 +1,5 @@
-// GlobalStateProvider.js
+//Reference : https://stackoverflow.com/questions/44227235/global-state-in-react-native
+
 import React, { createContext, useContext, useState } from 'react';
 
 const GlobalStateContext = createContext();

@@ -4,7 +4,7 @@ import { View, Image, StyleSheet, Text, TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { LinearGradient } from 'expo-linear-gradient';
 import SettingPopUp from './SettingPopUp';
-import { useGlobalState } from './GlobalStateProvider'; // Import global state hook
+import { useGlobalState } from './GlobalFile'; // Import global state hook
 
 const HomePage = () => {
   const nav = useNavigation();
@@ -13,8 +13,7 @@ const HomePage = () => {
 
   // Global state
   const [points, setPoints] = useGlobalState('points');
-  const [time, setTime] = useGlobalState('time');
-
+  
   const openSettings = () => setSettingVisible(true);
   const closeSettings = () => setSettingVisible(false);
 

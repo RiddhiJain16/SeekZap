@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { StyleSheet, View, Image, Dimensions, TouchableOpacity, Text } from 'react-native';
 import { GestureHandlerRootView, PinchGestureHandler, PanGestureHandler, State } from 'react-native-gesture-handler';
 import Animated, { useSharedValue, useAnimatedStyle, withSpring } from 'react-native-reanimated';
-import { useGlobalState } from './GlobalStateProvider'; // Import global state hook
+import { useGlobalState } from './GlobalFile'; // Import global state hook
+import { LinearGradient } from 'expo-linear-gradient';
 
 const { width, height } = Dimensions.get('window');
-// Define tasks and corresponding images
+
 const tasks = [
   {
     id: 1,
