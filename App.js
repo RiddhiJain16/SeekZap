@@ -2,7 +2,7 @@
 // icons : https://fonts.google.com/icons
 // Images for board : https://www.freepik.com/
 // Image editing : https://www.adobe.com/products/photoshop/landpa.html?sdid=FR7NYZM2&mv=search&mv2=paidsearch&ef_id=cfceb887530014eb6171de59f0114103:G:s&s_kwcid=AL!3085!10!79165043299287!79165251442725&msclkid=cfceb887530014eb6171de59f0114103
-
+// background music : https://pixabay.com/music/search/slow%20soft%20%20background/?mood=quirky 
 import React from 'react';
 import { SafeAreaView, StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';

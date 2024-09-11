@@ -13,7 +13,7 @@ const SplashLoad = () => {
 
         const timer = setTimeout(() => {
             nav.replace('HomePage');
-        }, 5000);
+        }, 2000);
 
         return() => clearTimeout(timer);
 
